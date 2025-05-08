@@ -6,45 +6,48 @@ st.set_page_config(
     page_icon="🏠",
 )
 
-st.title("Health Universe - Streamlit 📊")
+st.title("Creatinine Clearance Calculator 📊")
 st.divider()
 st.markdown(
     """
-**Welcome to the [Health Universe](https://www.healthuniverse.com) community!** Health Universe
-is an open-source cloud deployment platform and community for  machine learning (ML) and AI from science to medicine.
+    Welcome to the Creatinine Clearance Calculator! This application helps healthcare professionals
+    estimate a patient's kidney function using the Cockcroft-Gault formula.
 
-This template provides a starter [Streamlit](https://streamlit.io/) application deployable to Health Universe.
-"""
+    ### Features
+    - Calculate estimated creatinine clearance (CrCl)
+    - Input validation for age, weight, and serum creatinine
+    - Gender-specific calculations
+    - Clear interpretation of results
+    - Educational information about the formula
+
+    Navigate to the Creatinine Clearance Calculator page to get started!
+    """
 )
 
-st.subheader("Structure")
+st.subheader("About the Calculator")
 
 st.markdown(
     """
-The application is organized into a modular structure to enhance maintainability and scalability.
-The directory structure includes a main Home.py file, a src module, and submodules such as
-components, config, pages, and utils.
+    The calculator uses the Cockcroft-Gault formula, which is one of the most widely used methods
+    to estimate creatinine clearance. This estimation is crucial for:
+    - Determining appropriate drug dosages
+    - Assessing kidney function
+    - Monitoring renal impairment
+    - Making clinical decisions
 
-```plaintext
-{your_folder_name_here}/
-    ├── src/
-    │   ├── components/
-    │   │   └── __init__.py
-    │   ├── config/
-    │   │   └── __init__.py
-    │   ├── pages/
-    │   │   ├── 1_Demo.py
-    │   │   ├── 2_Deploy.py
-    │   │   └── __init__.py
-    │   ├── schemas/
-    │   │   ├── chads_vasc_score.py
-    │   │   └── __init__.py
-    │   ├── utils/
-    │   │   ├── data_loader.py
-    │   │   └── __init__.py
-    │   └── __init__.py
-    │── Home.py
-    └── __init__.py
-```
-"""
+    The formula takes into account:
+    - Age
+    - Weight
+    - Gender
+    - Serum creatinine levels
+    """
+)
+
+st.divider()
+st.markdown(
+    """
+    ### Important Note
+    This calculator provides estimates and should be used as a clinical decision support tool.
+    Always verify results and consult with healthcare professionals for proper medical assessment.
+    """
 )
